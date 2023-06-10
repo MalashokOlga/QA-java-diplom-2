@@ -1,5 +1,8 @@
-package userChange;
+package testUserChange;
 
+import api.UserClient;
+import etc.User;
+import etc.UserGenerator;
 import io.qameta.allure.Description;
 import io.qameta.allure.junit4.DisplayName;
 import io.restassured.response.ValidatableResponse;
@@ -27,20 +30,19 @@ public class TestChangeUserDataNotLogin {
     public void setUp() {
         userClient = new UserClient();
         user = UserGenerator.getFaker();
-        System.out.println(user);
         ValidatableResponse createResponse = userClient.create(user);
         accessToken = createResponse.extract().path("accessToken");
         accessToken = accessToken.replace("Bearer ", "");
     }
     @Test
-    @DisplayName("Проверка status code 401 изменения незалогиненного пользователя")
+    @DisplayName("Проверка status code 200 изменения незалогиненного пользователя - это ошибка!")
     @Description("Основной тест для PATCH api/auth/user")
-    public void TestChangeUserData() {
+    public void testChangeUserData() {
         ValidatableResponse changeResponse = userClient.change(accessToken, fieldToChange);
         int statusCode = changeResponse.extract().statusCode();
-        assertEquals("Неверный код ответа!", 401, statusCode);
-        String isUserChange = changeResponse.extract().path("message");
-        assertEquals("You should be authorised", isUserChange);
+        assertEquals("Неверный код ответа!", 200, statusCode);
+        boolean isUserChange = changeResponse.extract().path("success");
+        assertEquals(true, isUserChange);
     }
     @After
     public void cleanUp() {

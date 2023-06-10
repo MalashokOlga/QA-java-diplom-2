@@ -1,5 +1,9 @@
-package userChange;
+package testUserChange;
 
+import api.UserClient;
+import etc.User;
+import etc.UserCredentials;
+import etc.UserGenerator;
 import io.qameta.allure.Description;
 import io.qameta.allure.junit4.DisplayName;
 import io.restassured.response.ValidatableResponse;
@@ -38,7 +42,7 @@ public class TestChangeUserData {
     @Test
     @DisplayName("Проверка status code 200 изменения пользователя")
     @Description("Основной тест для PATCH api/auth/user")
-    public void TestChangeUserData() {
+    public void testChangeUserData() {
         ValidatableResponse changeResponse = userClient.change(accessTokenLogged, fieldToChange);
         int statusCode = changeResponse.extract().statusCode();
         assertEquals("Неверный код ответа!", 200, statusCode);

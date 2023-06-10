@@ -1,5 +1,9 @@
-package userLogin;
+package testUserCreate;
 
+import api.UserClient;
+import etc.User;
+import etc.UserCredentials;
+import etc.UserGenerator;
 import io.qameta.allure.Description;
 import io.qameta.allure.junit4.DisplayName;
 import io.restassured.response.ValidatableResponse;
@@ -32,7 +36,7 @@ public class TestUserAlreadyLoginCreate {
     @Test
     @DisplayName("Проверка status code 403 создания уже залогиненного пользователя")
     @Description("Основной тест для POST api/auth/register")
-    public void TestUserAlreadyLoginCreate() {
+    public void testUserAlreadyLoginCreate() {
         ValidatableResponse createResponse = userClient.create(userSecondTry);
         int statusCode = createResponse.extract().statusCode();
         assertEquals("Неверный код ответа!", 403, statusCode);

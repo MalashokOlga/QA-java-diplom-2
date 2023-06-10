@@ -4,14 +4,58 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="00e97b69-853c-4e10-9f89-06ce89428312" name="Changes" comment="" />
+    <list default="true" id="00e97b69-853c-4e10-9f89-06ce89428312" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/api/OrderClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/api/UserClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/etc/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/etc/RestClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/etc/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/etc/UserCredentials.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/etc/UserGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/testOrderCreate/TestOrderCreateAuthorized.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/testOrderCreate/TestOrderCreateAuthorizedNoIngredient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/testOrderCreate/TestOrderCreateAuthorizedWrongIngredient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/testOrderGet/TestGetOrdersNonAuthorizedUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Order.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/OrderClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/RestClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UserClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UserCredentials.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UserGenerator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestChangeUserData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testUserChange/TestChangeUserData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestChangeUserDataNotLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testUserChange/TestChangeUserDataNotLogin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestGetOrdersAuthorizedUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testOrderGet/TestGetOrdersAuthorizedUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestGetOrdersNonAuthorizedUser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestOrderCreateAuthorized.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestOrderCreateAuthorizedNoIngredient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testOrderCreate/TestOrderCreateNonAuthorized.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestOrderCreateAuthorizedWrongIngredient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestOrderCreateNonAuthorized.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestUserAlreadyLoginCreate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testUserCreate/TestUserAlreadyLoginCreate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestUserCreate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testUserCreate/TestUserCreate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestUserCreateOneParamNull.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testUserCreate/TestUserCreateOneParamNull.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestUserLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testUserLogin/TestUserLogin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestUserLoginOneParamWrong.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testUserLogin/TestUserLoginOneParamWrong.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -29,9 +73,81 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "D:/Yandex_practicum/Diplom/QA-java-diplom-2"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.TestOrderCreateAuthorized">
+    <configuration name="TestChangeUserDataNotLogin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="QA-java-diplom-2" />
+      <option name="PACKAGE_NAME" value="testUserChange" />
+      <option name="MAIN_CLASS_NAME" value="testUserChange.TestChangeUserDataNotLogin" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestGetOrdersAuthorizedUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="QA-java-diplom-2" />
+      <option name="PACKAGE_NAME" value="testOrderGet" />
+      <option name="MAIN_CLASS_NAME" value="testOrderGet.TestGetOrdersAuthorizedUser" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestGetOrdersNonAuthorizedUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="QA-java-diplom-2" />
+      <option name="PACKAGE_NAME" value="testOrderGet" />
+      <option name="MAIN_CLASS_NAME" value="testOrderGet.TestGetOrdersNonAuthorizedUser" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestOrderCreateAuthorized" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="QA-java-diplom-2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testOrderCreate.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testOrderCreate" />
+      <option name="MAIN_CLASS_NAME" value="testOrderCreate.TestOrderCreateAuthorized" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestOrderCreateAuthorizedWrongIngredient" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="QA-java-diplom-2" />
+      <option name="PACKAGE_NAME" value="testOrderCreate" />
+      <option name="MAIN_CLASS_NAME" value="testOrderCreate.TestOrderCreateAuthorizedWrongIngredient" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.TestOrderCreateAuthorized" />
+        <item itemvalue="JUnit.TestChangeUserDataNotLogin" />
+        <item itemvalue="JUnit.TestGetOrdersNonAuthorizedUser" />
+        <item itemvalue="JUnit.TestGetOrdersAuthorizedUser" />
+        <item itemvalue="JUnit.TestOrderCreateAuthorizedWrongIngredient" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">

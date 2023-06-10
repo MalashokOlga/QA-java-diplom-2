@@ -1,9 +1,11 @@
-package userCreate;
+package testUserCreate;
 
+import api.UserClient;
+import etc.User;
+import etc.UserGenerator;
 import io.qameta.allure.Description;
 import io.qameta.allure.junit4.DisplayName;
 import io.restassured.response.ValidatableResponse;
-import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -40,7 +42,7 @@ public class TestUserCreateOneParamNull {
     @Test
     @DisplayName("Проверка status code 403 создания пользователя без обязательного поля")
     @Description("Основной тест для POST api/auth/register")
-    public void TestUserCreateOneParamNull() {
+    public void testUserCreateOneParamNull() {
         ValidatableResponse createResponse = userClient.create(user);
         int statusCode = createResponse.extract().statusCode();
         assertEquals("Неверный код ответа!", 403, statusCode);

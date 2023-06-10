@@ -1,5 +1,9 @@
-package userLogin;
+package testUserLogin;
 
+import api.UserClient;
+import etc.User;
+import etc.UserCredentials;
+import etc.UserGenerator;
 import io.qameta.allure.Description;
 import io.qameta.allure.junit4.DisplayName;
 import io.restassured.response.ValidatableResponse;
@@ -41,7 +45,7 @@ public class TestUserLoginOneParamWrong {
     @Test
     @DisplayName("Проверка status code 401 логина пользователя с неправильным полем")
     @Description("Основной тест для POST api/auth/login")
-    public void TestUserLoginOneParamWrong() {
+    public void testUserLoginOneParamWrong() {
         ValidatableResponse loginResponse = userClient.login(UserCredentials.from(user));
         int statusCode = loginResponse.extract().statusCode();
         assertEquals("Неверный код ответа!", 401, statusCode);
