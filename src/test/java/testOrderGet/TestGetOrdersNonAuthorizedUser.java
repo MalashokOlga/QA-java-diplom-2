@@ -12,6 +12,7 @@ import org.junit.Test;
 import api.OrderClient;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 public class TestGetOrdersNonAuthorizedUser {
     private UserClient userClient;
@@ -34,8 +35,7 @@ public class TestGetOrdersNonAuthorizedUser {
         ValidatableResponse createResponse = orderClient.getUserOrders(accessToken);
         int statusCode = createResponse.extract().statusCode();
         assertEquals("Неверный код ответа!", 200, statusCode);
-        boolean isOrdersGet = createResponse.extract().path("success");
-        assertEquals("Неверный ответ!", true, isOrdersGet);
+        assertTrue(createResponse.extract().path("success"));
     }
     @After
     public void cleanUp() {

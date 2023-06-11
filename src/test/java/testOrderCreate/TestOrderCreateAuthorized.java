@@ -17,6 +17,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 public class TestOrderCreateAuthorized {
     private UserClient userClient;
@@ -46,8 +47,7 @@ public class TestOrderCreateAuthorized {
         ValidatableResponse createResponse = orderClient.create(order, accessToken);
         int statusCode = createResponse.extract().statusCode();
         assertEquals("Неверный код ответа!", 200, statusCode);
-        boolean isOrderCreated = createResponse.extract().path("success");
-        assertEquals("Неверный ответ!", true, isOrderCreated);
+        assertTrue(createResponse.extract().path("success"));
     }
     @After
     public void cleanUp() {

@@ -14,6 +14,7 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 @RunWith(Parameterized.class)
 public class TestChangeUserData {
@@ -46,8 +47,7 @@ public class TestChangeUserData {
         ValidatableResponse changeResponse = userClient.change(accessTokenLogged, fieldToChange);
         int statusCode = changeResponse.extract().statusCode();
         assertEquals("Неверный код ответа!", 200, statusCode);
-        boolean isUserChange = changeResponse.extract().path("success");
-        assertEquals(true, isUserChange);
+        assertTrue(changeResponse.extract().path("success"));
     }
     @After
     public void cleanUp() {

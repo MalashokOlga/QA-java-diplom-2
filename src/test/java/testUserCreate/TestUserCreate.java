@@ -11,6 +11,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 
 public class TestUserCreate {
@@ -33,8 +34,7 @@ public class TestUserCreate {
         assertEquals("Неверный код ответа!", 200, statusCode);
         accessToken = createResponse.extract().path("accessToken");
         accessToken = accessToken.replace("Bearer ", "");
-        boolean isUserCreated = createResponse.extract().path("success");
-        assertEquals("Неверный ответ!", true, isUserCreated);
+        assertTrue(createResponse.extract().path("success"));
     }
 
     @After

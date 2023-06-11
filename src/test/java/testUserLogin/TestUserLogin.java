@@ -12,6 +12,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 public class TestUserLogin {
     private UserClient userClient;
@@ -34,8 +35,7 @@ public class TestUserLogin {
         assertEquals("Неверный код ответа!", 200, statusCode);
         accessToken = loginResponse.extract().path("accessToken");
         accessToken = accessToken.replace("Bearer ", "");
-        boolean isUserLogin = loginResponse.extract().path("success");
-        assertEquals("Неверный ответ!", true, isUserLogin);
+        assertTrue(loginResponse.extract().path("success"));
     }
 
     @After

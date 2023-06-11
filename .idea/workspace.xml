@@ -4,40 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="00e97b69-853c-4e10-9f89-06ce89428312" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/api/OrderClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/api/UserClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/etc/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/etc/RestClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/etc/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/etc/UserCredentials.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/etc/UserGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/testOrderCreate/TestOrderCreateAuthorized.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/testOrderCreate/TestOrderCreateAuthorizedNoIngredient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/testOrderCreate/TestOrderCreateAuthorizedWrongIngredient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/testOrderGet/TestGetOrdersNonAuthorizedUser.java" afterDir="false" />
+    <list default="true" id="00e97b69-853c-4e10-9f89-06ce89428312" name="Changes" comment="add packages, fix file&amp;test name">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Order.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/OrderClient.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/RestClient.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/UserClient.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/UserCredentials.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/UserGenerator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestChangeUserData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testUserChange/TestChangeUserData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestChangeUserDataNotLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testUserChange/TestChangeUserDataNotLogin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestGetOrdersAuthorizedUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testOrderGet/TestGetOrdersAuthorizedUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestGetOrdersNonAuthorizedUser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestOrderCreateAuthorized.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestOrderCreateAuthorizedNoIngredient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testOrderCreate/TestOrderCreateNonAuthorized.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestOrderCreateAuthorizedWrongIngredient.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestOrderCreateNonAuthorized.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestUserAlreadyLoginCreate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testUserCreate/TestUserAlreadyLoginCreate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestUserCreate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testUserCreate/TestUserCreate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestUserCreateOneParamNull.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testUserCreate/TestUserCreateOneParamNull.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestUserLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testUserLogin/TestUserLogin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestUserLoginOneParamWrong.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testUserLogin/TestUserLoginOneParamWrong.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testOrderCreate/TestOrderCreateAuthorized.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testOrderCreate/TestOrderCreateAuthorized.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testOrderCreate/TestOrderCreateNonAuthorized.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testOrderCreate/TestOrderCreateNonAuthorized.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testOrderGet/TestGetOrdersAuthorizedUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testOrderGet/TestGetOrdersAuthorizedUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testOrderGet/TestGetOrdersNonAuthorizedUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testOrderGet/TestGetOrdersNonAuthorizedUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testUserChange/TestChangeUserData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testUserChange/TestChangeUserData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testUserChange/TestChangeUserDataNotLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testUserChange/TestChangeUserDataNotLogin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testUserCreate/TestUserCreate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testUserCreate/TestUserCreate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testUserLogin/TestUserLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testUserLogin/TestUserLogin.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,14 +46,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "D:/Yandex_practicum/Diplom/QA-java-diplom-2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Yandex_practicum/Diplom/QA-java-diplom-2&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="" />
@@ -86,20 +62,32 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TestOrderCreateAuthorized">
-    <configuration name="TestChangeUserDataNotLogin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.TestUserLogin">
+    <configuration name="TestChangeUserData" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="QA-java-diplom-2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testUserChange.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <option name="PACKAGE_NAME" value="testUserChange" />
-      <option name="MAIN_CLASS_NAME" value="testUserChange.TestChangeUserDataNotLogin" />
+      <option name="MAIN_CLASS_NAME" value="testUserChange.TestChangeUserData" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestGetOrdersAuthorizedUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestChangeUserDataNotLogin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="QA-java-diplom-2" />
-      <option name="PACKAGE_NAME" value="testOrderGet" />
-      <option name="MAIN_CLASS_NAME" value="testOrderGet.TestGetOrdersAuthorizedUser" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testUserChange.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testUserChange" />
+      <option name="MAIN_CLASS_NAME" value="testUserChange.TestChangeUserDataNotLogin" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -114,25 +102,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestOrderCreateAuthorized" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestUserCreate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="QA-java-diplom-2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="testOrderCreate.*" />
+          <option name="PATTERN" value="testUserCreate.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="testOrderCreate" />
-      <option name="MAIN_CLASS_NAME" value="testOrderCreate.TestOrderCreateAuthorized" />
+      <option name="PACKAGE_NAME" value="testUserCreate" />
+      <option name="MAIN_CLASS_NAME" value="testUserCreate.TestUserCreate" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestOrderCreateAuthorizedWrongIngredient" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestUserLogin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="QA-java-diplom-2" />
-      <option name="PACKAGE_NAME" value="testOrderCreate" />
-      <option name="MAIN_CLASS_NAME" value="testOrderCreate.TestOrderCreateAuthorizedWrongIngredient" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testUserLogin.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testUserLogin" />
+      <option name="MAIN_CLASS_NAME" value="testUserLogin.TestUserLogin" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -140,11 +134,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestOrderCreateAuthorized" />
+        <item itemvalue="JUnit.TestUserLogin" />
+        <item itemvalue="JUnit.TestUserCreate" />
         <item itemvalue="JUnit.TestChangeUserDataNotLogin" />
+        <item itemvalue="JUnit.TestChangeUserData" />
         <item itemvalue="JUnit.TestGetOrdersNonAuthorizedUser" />
-        <item itemvalue="JUnit.TestGetOrdersAuthorizedUser" />
-        <item itemvalue="JUnit.TestOrderCreateAuthorizedWrongIngredient" />
       </list>
     </recent_temporary>
   </component>
@@ -157,6 +151,18 @@
       <option name="presentableId" value="Default" />
       <updated>1685798290396</updated>
     </task>
+    <task id="LOCAL-00001" summary="add packages, fix file&amp;test name">
+      <created>1686394984651</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1686394984651</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add packages, fix file&amp;test name" />
+    <option name="LAST_COMMIT_MESSAGE" value="add packages, fix file&amp;test name" />
   </component>
 </project>
